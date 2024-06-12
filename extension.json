@@ -1,0 +1,33 @@
+{
+	"name": "DiscordConnect",
+	"version": "0.1.0",
+	"author": "RobbiRobb",
+	"manifest_version": 2,
+	"descriptionmsg" : "discordconnect-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "hook",
+	"MessagesDirs": {
+		"DiscordConnect": [
+			"i18n"
+		]
+	},
+	"requires": {
+		"MediaWiki": ">= 1.37.0"
+	},
+	"AutoloadClasses": {
+        "DiscordConnectApi": "includes/DiscordConnectApi.php",
+        "DiscordConnectHooks": "includes/DiscordConnectHooks.php"
+    },
+	"DefaultUserOptions": {
+		"discordname": ""
+	},
+	"Hooks": {
+		"GetPreferences": "DiscordConnectHooks::onGetPreferences",
+		"SaveUserOptions": "DiscordConnectHooks::onSaveUserOptions"
+	},
+	"APIListModules": {
+		"discordconnect": {
+			"class": "DiscordConnectApi"
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [ "RobbiRobb" ]
+	},
+	"discordconnect-desc": "Adds a new field to [[Special:Preferences]] for global discord usernames as well as an extension to the api allowing users to read that data.",
+	"discordconnect-preferences-label": "Global discord username:",
+	"discordconnect-preferences-help": "Adding your global discord username is optional. Adding your global discord username allows matching your discord profile with your wiki account. This data is visible publicly.",
+	"apihelp-query+discordconnect-summary": "Returns the global discord username of users.",
+	"apihelp-query+discordconnect-param-user": "Users for which the global discord username should be loaded."
+}
