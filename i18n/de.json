@@ -6,5 +6,6 @@
 	"discordconnect-preferences-label": "Globaler Discord-Benutzername:",
 	"discordconnect-preferences-help": "Die Angabe des globalen Discord-Benutzernamens ist optional. Eine Angabe ermöglicht eine Zuordnung eines Discord-Profils zu einem Wiki-Account. Diese Angabe ist öffentlich einsehbar.",
 	"apihelp-query+discordconnect-summary": "Gibt den globalen Discord-Benutzernamen von Benutzern aus.",
-	"apihelp-query+discordconnect-param-user": "Benutzer, für die der globale Discord-Benutzername geladen werden soll."
+	"apihelp-query+discordconnect-param-user": "Benutzer, für die der globale Discord-Benutzername geladen werden soll.",
+	"discordconnect-baddiscordname": "Ungültiger Discord-Benutzername. Der Discord-Benutzername darf nur Kleinbuchstaben sowie Punkte und Unterstriche enthalten."
 }

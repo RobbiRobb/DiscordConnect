@@ -22,7 +22,15 @@ class DiscordConnectHooks  {
 			"section" => "personal/info",
 			"maxlength" => 32,
 			"label-message" => "discordconnect-preferences-label",
-			"help-message" => "discordconnect-preferences-help"
+			"help-message" => "discordconnect-preferences-help",
+			"validation-callback" => function($value, $allData, HTMLForm $form) {
+				if(empty($value)) return true;
+				
+				preg_match("/^[a-zA-Z0-9\._]*$/", $value, $matches);
+				if(count($matches) == 0) return $form->msg( 'discordconnect-baddiscordname' )->escaped();
+				
+				return true;
+			}
 		];
 	}
 	
