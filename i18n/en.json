@@ -4,7 +4,7 @@
 	},
 	"discordconnect-desc": "Adds a new field to [[Special:Preferences]] for global Discord usernames as well as an extension to the api allowing users to read that data.",
 	"discordconnect-preferences-label": "Global Discord username:",
-	"discordconnect-preferences-help": "Adding your global Discord username is optional. Adding your global Discord username allows matching your Discord profile with your wiki account. This data is visible publicly.",
+	"discordconnect-preferences-help": "Global Discord username is optional. If provided, it may be used to verify your Discord account. This information will be public.",
 	"apihelp-query+discordconnect-summary": "Returns the global Discord username of users.",
 	"apihelp-query+discordconnect-param-user": "Users for which the global Discord username should be loaded.",
 	"discordconnect-baddiscordname": "Invalid Discord username. The Discord username may only contain lowercase letters, periods and underscores."

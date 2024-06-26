@@ -41,6 +41,9 @@ class DiscordConnectHooks  {
 	* @static
 	*/
 	public static function onSaveUserOptions($user, &$modifiedOptions, $originalOptions) : void {
+		if(!isset($modifiedOptions["discordname"])) {
+			return;
+		}
 		$modifiedOptions["discordname"] = strtolower(trim($modifiedOptions["discordname"]));
 	}
 }
