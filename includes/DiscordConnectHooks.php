@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
 * adds all necessities to save and load global discord user names in a users preferences
 *
@@ -23,6 +25,7 @@ class DiscordConnectHooks  {
 			"maxlength" => 32,
 			"label-message" => "discordconnect-preferences-label",
 			"help-message" => "discordconnect-preferences-help",
+			"default" => MediaWikiServices::getInstance()->getUserOptionsLookup()->getOption($user, "discordname", ""),
 			"validation-callback" => function($value, $allData, HTMLForm $form) {
 				if(empty($value)) return true;
 				
